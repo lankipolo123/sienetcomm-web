@@ -1,22 +1,64 @@
 export const SERVICES = [
-    {
-        icon: '📡',
-        title: 'Enterprise Network',
-        desc: 'IP/TDM PABX systems, structured cabling, CCTV, access control, fire alarm, and unified communications installation.'
-    },
-    {
-        icon: '🔧',
-        title: 'OSP & Fiber Optic',
-        desc: 'Outside plant cabling, fiber optic splicing, copper and fiber aerial/underground installation and auditing.'
-    },
-    {
-        icon: '🏗️',
-        title: 'Civil Works',
-        desc: 'Civil planning, design and construction, housing, warehouses, asphalt and road widening, foundation works.'
-    },
-    {
-        icon: '🗼',
-        title: 'Tower & Electrical',
-        desc: 'Cell site construction, communication tower design, fabrication and erection, electrical planning and installation.'
-    },
+  {
+    icon: '📡',
+    title: 'Enterprise Network',
+    subtitle: 'Communications & Security Infrastructure',
+    desc: 'End-to-end enterprise ICT solutions — from unified communications and IP PBX to structured cabling, CCTV, access control, and fire alarm systems.',
+    items: [
+      'Unified Communications System Installation, Relocation & Reprogramming',
+      'Project Management and Consultancy',
+      'Supervised Communications Platform and System Installation',
+      'Preventive Maintenance Services (PMSC)',
+      'On-Call Services & End User / Admin-Technical Training',
+      'Diagnostics & Reporting',
+      'Lease-To-Own Term on IP-PBX System',
+      'Structured Cabling on Voice & Data (Horizontal/Vertical)',
+      'CCTV & Digital Surveillance Installation',
+      'Biometric & Access Control Systems',
+      'Fire Alarm & Detection Systems (FDAS)',
+      'Audio Visual System Integration',
+      'Paging & Intercom Systems',
+    ],
+  },
+  {
+    icon: '🔧',
+    title: 'OSP & Fiber Optic',
+    subtitle: 'Outside Plant & Fiber Infrastructure',
+    desc: 'Complete outside plant cabling from design to deployment — fiber optic splicing, copper and fiber aerial and underground installation, and network auditing.',
+    items: [
+      'Inside & Outside Plant Cabling (Copper/Fiber Optic)',
+      'Fiber Optic Splicing and Auditing',
+      'Aerial & Underground Cable Installation',
+      'OSP Copper & Fiber Layout/Installation',
+      'OSP Civil Planning, Design & Development',
+      'Fiber Optic Network Testing & Certification',
+    ],
+  },
+  {
+    icon: '🏗️',
+    title: 'Civil Works',
+    subtitle: 'Construction & Infrastructure Development',
+    desc: 'Full-scale civil planning, design, and construction — from housing and warehouses to road works and structural foundation projects.',
+    items: [
+      'Civil Planning, Design & Construction',
+      'Housing & Warehouse Construction',
+      'Asphalt & Road Widening',
+      'Foundation Works & Structural Development',
+      'Building Renovation, Alteration & Redevelopment',
+      'Architectural Design and Planning',
+    ],
+  },
+  {
+    icon: '🗼',
+    title: 'Tower & Cell Site',
+    subtitle: 'Telecommunications Tower & Electrical',
+    desc: 'Cell site construction, communication tower design and fabrication, tower erection, and complete electrical planning and installation services.',
+    items: [
+      'Cell Site Construction & Development',
+      'Communication Tower Design & Fabrication',
+      'Tower Erection, Installation & Civil Works',
+      'Electrical Planning, Design & Installation',
+      'Supply, Repair & Maintenance of Biomedical Equipment (Hospital)',
+    ],
+  },
 ]

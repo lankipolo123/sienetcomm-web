@@ -1,46 +1,71 @@
 import { LitElement, html } from 'lit'
 import { SERVICES } from '@/constants/services.js'
 
+const SERVICE_IMAGES = [
+  'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=700&q=80',
+  'https://images.unsplash.com/photo-1548407260-da850faa41e3?auto=format&fit=crop&w=700&q=80',
+  'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=700&q=80',
+  'https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=700&q=80',
+]
 
 class SiteServices extends LitElement {
-    createRenderRoot() { return this; }
+  createRenderRoot() { return this; }
 
-    static properties = {
-        showFilters: { type: Boolean },
-        activeFilter: { type: String }
-    }
+  render() {
+    return html`
+      <section data-section="services" style="background: white; padding: 72px 80px; border-bottom: 1px solid #f0f0f0;">
 
-    constructor() {
-        super()
-        this.showFilters = false
-        this.activeFilter = 'All'
-    }
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 3px; color: #9ca3af; font-weight: 600; margin: 0 0 10px;">What We Do</p>
+            <h2 style="font-size: 2rem; font-weight: 700; color: #111827; margin: 0 0 10px;">Our Services</h2>
+            <p style="font-size: 0.9rem; color: #6b7280; margin: 0; max-width: 460px;">
+              End-to-end ICT and civil works solutions across enterprise networks, fiber infrastructure, construction, and tower engineering.
+            </p>
+          </div>
+          <button
+            @click=${() => window.location.hash = '#services'}
+            style="background: #1A6B2A; color: white; font-size: 0.85rem; font-weight: 600; padding: 11px 24px; border-radius: 10px; border: none; cursor: pointer; white-space: nowrap;"
+          >
+            View full details →
+          </button>
+        </div>
 
-    render() {
-        return html`
-      <section data-section="services" class="px-10 py-16 border-b border-gray-100">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+          ${SERVICES.map((s, i) => html`
+            <div
+              style="
+                position: relative;
+                border-radius: 18px;
+                overflow: hidden;
+                cursor: pointer;
+                min-height: 280px;
+                background: url('${SERVICE_IMAGES[i]}') center/cover;
+              "
+              @click=${() => window.location.hash = '#services'}
+            >
+              <!-- Dark overlay -->
+              <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,35,20,0.95) 0%, rgba(10,35,20,0.4) 60%, rgba(0,0,0,0.1) 100%);"></div>
 
-        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">What we do</p>
-        <h2 class="text-3xl font-semibold mb-3" style="color: #1A6B2A;">Our Services</h2>
-        <p class="text-sm text-gray-500 leading-relaxed max-w-xl mb-10">
-          SIENETCOMM delivers end-to-end ICT and civil works solutions. 
-          Our expertise spans network infrastructure, fiber optics, civil construction, 
-          and tower engineering across the Philippines.
-        </p>
-
-        <div class="grid grid-cols-2 gap-4">
-          ${SERVICES.map(s => html`
-            <div class="bg-gray-50 border border-gray-100 rounded-xl p-5">
-              <div class="text-2xl mb-3">${s.icon}</div>
-              <h3 class="text-sm font-semibold mb-2">${s.title}</h3>
-              <p class="text-xs text-gray-500 leading-relaxed">${s.desc}</p>
+              <!-- Content -->
+              <div style="position: relative; z-index: 1; padding: 28px; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; box-sizing: border-box;">
+                <div style="font-size: 2rem; margin-bottom: 10px;">${s.icon}</div>
+                <h3 style="font-size: 1.1rem; font-weight: 700; color: white; margin: 0 0 6px;">${s.title}</h3>
+                <p style="font-size: 0.8rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 14px;">${s.subtitle}</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                  ${s.items.slice(0, 3).map(item => html`
+                    <span style="background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.8); font-size: 0.7rem; padding: 3px 10px; border-radius: 99px; border: 1px solid rgba(255,255,255,0.15);">${item.split('/')[0].trim()}</span>
+                  `)}
+                  <span style="background: rgba(26,107,42,0.6); color: rgba(255,255,255,0.9); font-size: 0.7rem; padding: 3px 10px; border-radius: 99px;">+${s.items.length - 3} more</span>
+                </div>
+              </div>
             </div>
           `)}
         </div>
 
       </section>
     `
-    }
+  }
 }
 
 customElements.define('site-services', SiteServices)

@@ -1,14 +1,11 @@
-import { LitElement, html } from 'lit';
-import '@/pages/home.js';
+import { LitElement, html } from 'lit'
+import '@/router.js'
 
 export class AppMain extends LitElement {
   createRenderRoot() { return this; }
 
-
   render() {
-    return html`
-    <home-page></home-page>
-    `
+    return html`<app-router></app-router>`
   }
 }
 
