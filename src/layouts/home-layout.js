@@ -14,7 +14,6 @@ class HomeLayout extends LitElement {
         <slot name="products-teaser"></slot>
         <slot name="clients"></slot>
         <slot name="about"></slot>
-        <slot name="contact"></slot>
         <slot name="footer"></slot>
       </div>
     `

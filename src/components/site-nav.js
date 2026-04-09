@@ -50,7 +50,7 @@ class SiteNav extends LitElement {
                   class="text-sm rounded-lg px-4 py-2 cursor-pointer border-none transition-all"
                   style="
                     background: ${active ? '#1A6B2A' : 'transparent'};
-                    color: ${active ? 'white' : '#4b5563'};
+                    color: ${active ? 'white' : '#CC0000'};
                     font-weight: ${active ? '600' : '400'};
                   "
                 >

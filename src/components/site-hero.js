@@ -5,10 +5,9 @@ class SiteHero extends LitElement {
 
   render() {
     return html`
-      <!-- Full-width hero with background image -->
       <section data-section="hero" style="
         position: relative;
-        min-height: 88vh;
+        min-height: 55vh;
         display: flex;
         align-items: center;
         background:
@@ -18,7 +17,6 @@ class SiteHero extends LitElement {
         overflow: hidden;
       ">
 
-        <!-- Decorative accent -->
         <div style="
           position: absolute;
           right: -120px;
@@ -42,7 +40,7 @@ class SiteHero extends LitElement {
             text-transform: uppercase;
             padding: 7px 16px;
             border-radius: 99px;
-            margin-bottom: 28px;
+            margin-bottom: 24px;
             border: 1px solid rgba(255,255,255,0.15);
           ">
             <span style="width: 6px; height: 6px; background: #4ade80; border-radius: 50%; display: inline-block;"></span>
@@ -50,12 +48,12 @@ class SiteHero extends LitElement {
           </span>
 
           <h1 style="
-            font-size: 4rem;
-            font-weight: 800;
+            font-size: 2.6rem;
+            font-weight: 700;
             color: white;
-            line-height: 1.08;
-            margin: 0 0 20px;
-            letter-spacing: -1px;
+            line-height: 1.15;
+            margin: 0 0 18px;
+            letter-spacing: -0.5px;
           ">
             Building the networks that
             <span style="color: #f87171;"> connect</span>
@@ -63,27 +61,27 @@ class SiteHero extends LitElement {
           </h1>
 
           <p style="
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: rgba(255,255,255,0.7);
             line-height: 1.75;
-            max-width: 560px;
-            margin: 0 0 36px;
+            max-width: 540px;
+            margin: 0 0 32px;
           ">
             From telecommunications infrastructure to civil construction, SIENETCOMM delivers
             end-to-end project management, installation, and maintenance services across
             Luzon, Visayas, and Mindanao.
           </p>
 
-          <div style="display: flex; gap: 14px; margin-bottom: 56px; flex-wrap: wrap;">
+          <div style="display: flex; gap: 12px; margin-bottom: 48px; flex-wrap: wrap;">
             <button
               @click=${() => window.location.hash = '#services'}
               style="
-                font-size: 0.95rem;
+                font-size: 0.9rem;
                 font-weight: 600;
                 color: white;
                 background: #CC0000;
-                border-radius: 12px;
-                padding: 14px 32px;
+                border-radius: 10px;
+                padding: 12px 28px;
                 cursor: pointer;
                 border: none;
                 box-shadow: 0 4px 20px rgba(204,0,0,0.4);
@@ -94,12 +92,12 @@ class SiteHero extends LitElement {
             <button
               @click=${() => window.location.hash = '#contact'}
               style="
-                font-size: 0.95rem;
+                font-size: 0.9rem;
                 font-weight: 500;
                 color: white;
                 background: rgba(255,255,255,0.12);
-                border-radius: 12px;
-                padding: 14px 32px;
+                border-radius: 10px;
+                padding: 12px 28px;
                 cursor: pointer;
                 border: 1px solid rgba(255,255,255,0.25);
               "
@@ -109,22 +107,21 @@ class SiteHero extends LitElement {
             <button
               @click=${() => window.location.hash = '#products'}
               style="
-                font-size: 0.95rem;
+                font-size: 0.9rem;
                 font-weight: 500;
-                color: rgba(255,255,255,0.85);
+                color: rgba(255,255,255,0.8);
                 background: transparent;
-                border-radius: 12px;
-                padding: 14px 32px;
+                border-radius: 10px;
+                padding: 12px 28px;
                 cursor: pointer;
                 border: 1px solid rgba(255,255,255,0.15);
               "
             >
-              Our Products →
+              Our Products
             </button>
           </div>
 
-          <!-- Stats row -->
-          <div style="display: flex; gap: 0; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 32px; flex-wrap: wrap;">
+          <div style="display: flex; gap: 0; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 28px; flex-wrap: wrap;">
             ${[
               { value: '16+', label: 'Years in operation' },
               { value: '50–100', label: 'Engineers per project' },
@@ -132,11 +129,11 @@ class SiteHero extends LitElement {
               { value: '16', label: 'Industries served' },
             ].map((stat, i) => html`
               <div style="
-                padding: ${i === 0 ? '0 40px 0 0' : '0 40px'};
+                padding: ${i === 0 ? '0 36px 0 0' : '0 36px'};
                 border-right: ${i < 3 ? '1px solid rgba(255,255,255,0.15)' : 'none'};
               ">
-                <div style="font-size: 2rem; font-weight: 700; color: #86efac;">${stat.value}</div>
-                <div style="font-size: 0.72rem; color: rgba(255,255,255,0.5); margin-top: 4px; text-transform: uppercase; letter-spacing: 1px;">${stat.label}</div>
+                <div style="font-size: 1.8rem; font-weight: 700; color: #86efac;">${stat.value}</div>
+                <div style="font-size: 0.7rem; color: rgba(255,255,255,0.5); margin-top: 4px; text-transform: uppercase; letter-spacing: 1px;">${stat.label}</div>
               </div>
             `)}
           </div>
