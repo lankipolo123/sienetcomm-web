@@ -1,3 +1,9 @@
+export const PRODUCTS_HERO_STATS = [
+  { value: '14',              label: 'Product categories' },
+  { value: '60+',             label: 'Brand partners' },
+  { value: 'Supply & Install', label: 'End-to-end capability' },
+]
+
 export const PRODUCTS = [
   {
     category: 'Avaya Communication Platform (IP PBX)',

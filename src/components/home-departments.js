@@ -1,22 +1,5 @@
 import { LitElement, html } from 'lit'
-
-const DEPARTMENTS = [
-  {
-    name: 'Enterprise Network',
-    img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80',
-    skills: ['IP/TDM PABX', 'Structured Cabling', 'CCTV & Access Control', 'FDAS & AV Systems', 'Data Center'],
-  },
-  {
-    name: 'OSP Department',
-    img: 'https://images.unsplash.com/photo-1548407260-da850faa41e3?auto=format&fit=crop&w=600&q=80',
-    skills: ['Fiber Optic & Copper OSP', 'Fiber Splicing & Auditing', 'Aerial & Underground Cabling', 'Civil Planning & Design'],
-  },
-  {
-    name: 'Civil Works',
-    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-    skills: ['Cell Site Construction', 'Tower Design & Erection', 'Civil & Foundation Works', 'Electrical Installation'],
-  },
-]
+import { DEPARTMENTS } from '@/constants/departments.js'
 
 class HomeDepartments extends LitElement {
   createRenderRoot() { return this; }

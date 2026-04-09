@@ -1,3 +1,9 @@
+export const CLIENTS_HERO_STATS = [
+  { value: '50+',        label: 'Client organizations' },
+  { value: '16',         label: 'Industries served' },
+  { value: 'Nationwide', label: 'Coverage across all regions' },
+]
+
 export const CLIENT_CATEGORIES = [
     'All',
     'Banking & Finance',

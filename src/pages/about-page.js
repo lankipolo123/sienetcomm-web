@@ -1,16 +1,10 @@
 import { LitElement, html } from 'lit'
+import { ABOUT_HERO_STATS } from '@/constants/departments.js'
 import '@/layouts/page-layout.js'
 import '@/components/site-nav.js'
 import '@/components/page-hero.js'
 import '@/components/about-content.js'
 import '@/components/site-footer.js'
-
-const HERO_STATS = [
-  { value: 'Est. 2008',  label: 'In operation' },
-  { value: '3',          label: 'Core departments' },
-  { value: '50–100+',    label: 'Technical staff deployable' },
-  { value: 'Nationwide', label: 'Luzon, Visayas, Mindanao' },
-]
 
 class AboutPage extends LitElement {
   createRenderRoot() { return this; }
@@ -25,7 +19,7 @@ class AboutPage extends LitElement {
           eyebrow="Who We Are"
           title="About SIENETCOMM INC."
           subtitle="Originally established as SieNet Communications Services over 16 years ago, we incorporated as SIENETCOMM INC. to better serve large enterprise and civil works projects across the Philippines."
-          .stats=${HERO_STATS}
+          .stats=${ABOUT_HERO_STATS}
         ></page-hero>
 
         <about-content slot="content"></about-content>
