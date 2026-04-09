@@ -6,7 +6,7 @@ import '@/components/about-content.js'
 import '@/components/site-footer.js'
 
 const HERO_STATS = [
-  { value: '16+',        label: 'Years in operation' },
+  { value: 'Est. 2008',  label: 'In operation' },
   { value: '3',          label: 'Core departments' },
   { value: '50–100+',    label: 'Technical staff deployable' },
   { value: 'Nationwide', label: 'Luzon, Visayas, Mindanao' },

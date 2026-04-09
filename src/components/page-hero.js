@@ -45,14 +45,14 @@ class PageHero extends LitElement {
         ` : ''}
 
         ${this.stats.length ? html`
-          <div style="display: flex; gap: 40px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.15); flex-wrap: wrap;">
+          <dl style="display: flex; gap: 40px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.15);">
             ${this.stats.map(s => html`
-              <div>
-                <div style="font-size: 1.8rem; font-weight: 700; color: #86efac;">${s.value}</div>
-                <div style="font-size: 0.7rem; color: rgba(255,255,255,0.5); margin-top: 4px; text-transform: uppercase; letter-spacing: 1px;">${s.label}</div>
+              <div style="flex-shrink: 0;">
+                <dt style="font-size: 1.8rem; font-weight: 700; color: #86efac;">${s.value}</dt>
+                <dd style="font-size: 0.7rem; color: rgba(255,255,255,0.5); margin: 4px 0 0; text-transform: uppercase; letter-spacing: 1px;">${s.label}</dd>
               </div>
             `)}
-          </div>
+          </dl>
         ` : ''}
 
       </section>

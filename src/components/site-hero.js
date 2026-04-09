@@ -121,22 +121,23 @@ class SiteHero extends LitElement {
             </button>
           </div>
 
-          <div style="display: flex; gap: 0; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 28px; flex-wrap: wrap;">
+          <dl style="display: flex; gap: 0; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 28px;">
             ${[
-              { value: '16+', label: 'Years in operation' },
-              { value: '50–100', label: 'Engineers per project' },
-              { value: '3', label: 'Core departments' },
-              { value: '16', label: 'Industries served' },
+              { value: 'Est. 2008', label: 'In operation' },
+              { value: '50–100',   label: 'Engineers per project' },
+              { value: '3',        label: 'Core departments' },
+              { value: '16',       label: 'Industries served' },
             ].map((stat, i) => html`
               <div style="
                 padding: ${i === 0 ? '0 36px 0 0' : '0 36px'};
                 border-right: ${i < 3 ? '1px solid rgba(255,255,255,0.15)' : 'none'};
+                flex-shrink: 0;
               ">
-                <div style="font-size: 1.8rem; font-weight: 700; color: #86efac;">${stat.value}</div>
-                <div style="font-size: 0.7rem; color: rgba(255,255,255,0.5); margin-top: 4px; text-transform: uppercase; letter-spacing: 1px;">${stat.label}</div>
+                <dt style="font-size: 1.8rem; font-weight: 700; color: #86efac;">${stat.value}</dt>
+                <dd style="font-size: 0.7rem; color: rgba(255,255,255,0.5); margin: 4px 0 0; text-transform: uppercase; letter-spacing: 1px;">${stat.label}</dd>
               </div>
             `)}
-          </div>
+          </dl>
 
         </div>
       </section>
