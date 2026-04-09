@@ -5,13 +5,13 @@ class PageLayout extends LitElement {
 
   render() {
     return html`
-      <div style="background: white;">
-        <slot name="nav"></slot>
+      <slot name="nav"></slot>
+      <main>
         <slot name="hero"></slot>
         <slot name="content"></slot>
         <slot name="cta"></slot>
-        <slot name="footer"></slot>
-      </div>
+      </main>
+      <slot name="footer"></slot>
     `
   }
 }

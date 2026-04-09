@@ -5,8 +5,8 @@ class HomeLayout extends LitElement {
 
   render() {
     return html`
-      <div class="bg-white">
-        <slot name="nav"></slot>
+      <slot name="nav"></slot>
+      <main>
         <slot name="hero"></slot>
         <slot name="banner-top"></slot>
         <slot name="departments"></slot>
@@ -14,8 +14,8 @@ class HomeLayout extends LitElement {
         <slot name="products-teaser"></slot>
         <slot name="clients"></slot>
         <slot name="about"></slot>
-        <slot name="footer"></slot>
-      </div>
+      </main>
+      <slot name="footer"></slot>
     `
   }
 }
