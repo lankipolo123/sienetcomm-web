@@ -1,3 +1,4 @@
+// site-about.js
 import { LitElement, html } from 'lit'
 import '@/components/accordion-item.js'
 import '@/components/registration-card.js'
@@ -25,10 +26,10 @@ class SiteAbout extends LitElement {
         </div>
 
         <!-- card row -->
-        <div class="flex flex-row gap-3 flex-wrap justify-center">
+        <div class="flex flex-row gap-3 flex-wrap justify-center items-stretch">
 
           <accordion-item
-            class="flex-1"
+            class="flex-1 self-stretch"
             label="Headquarters"
             .content=${html`
               <p class="text-sm text-gray-600 mb-3">
@@ -45,7 +46,7 @@ class SiteAbout extends LitElement {
           ></accordion-item>
 
           <accordion-item
-            class="flex-1"
+            class="flex-1 self-stretch"
             label="Coverage"
             .content=${html`
               <p class="text-sm text-gray-600 mb-3">Luzon, Visayas & Mindanao</p>
@@ -59,7 +60,7 @@ class SiteAbout extends LitElement {
           ></accordion-item>
 
           <registration-card
-            class="flex-1"
+            class="flex-1 self-stretch"
             secNo="2024040144132-00"
             tin="648-143-823-00000"
           ></registration-card>

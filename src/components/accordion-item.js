@@ -1,3 +1,4 @@
+// accordion-item.js
 import { LitElement, html } from 'lit'
 
 class AccordionItem extends LitElement {
@@ -14,11 +15,16 @@ class AccordionItem extends LitElement {
     this.open = false
   }
 
+  _toggle() {
+    this.open = !this.open
+    this.requestUpdate()
+  }
+
   render() {
     return html`
-    <div class="bg-white rounded-lg mb-2">
+    <div class="bg-white rounded-lg mb-2 h-full flex flex-col">
       <button
-        @click=${() => this.open = !this.open}
+        @click=${this._toggle}
         class="w-full flex items-center justify-between px-4 py-3 text-left cursor-pointer bg-transparent border-none rounded-lg"
         style="${this.open ? 'background: #f0f9f4;' : ''}"
       >
@@ -26,8 +32,7 @@ class AccordionItem extends LitElement {
         <span class="text-gray-400 text-xs">${this.open ? '∧' : '∨'}</span>
       </button>
       <div
-        class="px-4 pb-4 pt-1 border-t border-gray-100"
-        style="display: ${this.open ? 'block' : 'none'};"
+        class="px-4 pb-4 pt-1 border-t border-gray-100 ${this.open ? 'block' : 'hidden'}"
       >
         ${this.content}
       </div>
@@ -35,6 +40,5 @@ class AccordionItem extends LitElement {
   `
   }
 }
-
 
 customElements.define('accordion-item', AccordionItem)

@@ -7,7 +7,7 @@ class NavLogo extends LitElement {
     return html`
       <div class="flex items-center gap-3">
         <img 
-          src="/src/assets/siennet_logo.png" 
+          src="/siennet_logo.png" 
           alt="Sienetcomm logo"
           class="w-12 h-12 object-contain"
         />
