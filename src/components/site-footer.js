@@ -11,12 +11,9 @@ class SiteFooter extends LitElement {
 
           <!-- Brand column -->
           <div>
-            <div class="flex items-center gap-2 mb-4">
-              <img src="/siennet_logo.png" alt="SIENETCOMM" style="height: 36px; width: auto; object-fit: contain;" />
-              <div>
-                <div class="text-white font-bold text-sm tracking-wide" style="font-family: 'Barlow Condensed', sans-serif; font-size: 1rem;">SIENETCOMM INC.</div>
-                <div class="text-xs" style="color: rgba(255,255,255,0.45);">ICT & Civil Works Solutions</div>
-              </div>
+            <div class="mb-4">
+              <div class="text-white font-bold tracking-wide" style="font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem;">SIENETCOMM INC.</div>
+              <div class="text-xs" style="color: rgba(255,255,255,0.45);">ICT & Civil Works Solutions</div>
             </div>
             <p class="text-sm leading-relaxed mb-5" style="color: rgba(255,255,255,0.55); max-width: 280px;">
               General contracting across ICT and civil construction — serving enterprises, government, and institutions across the Philippines since 2008.
