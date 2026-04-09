@@ -7,13 +7,13 @@ class SiteHero extends LitElement {
     return html`
       <section data-section="hero" style="
         position: relative;
-        min-height: 55vh;
+        min-height: 35vh;
         display: flex;
         align-items: center;
         background:
           linear-gradient(135deg, rgba(10,35,20,0.93) 0%, rgba(26,107,42,0.82) 55%, rgba(20,82,36,0.75) 100%),
           url('https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
-        padding: 80px;
+        padding: 60px;
         overflow: hidden;
       ">
 
@@ -23,7 +23,7 @@ class SiteHero extends LitElement {
           top: 50%;
           transform: translateY(-50%);
           width: 600px;
-          height: 600px;
+          height: 450px;
           border-radius: 50%;
           background: radial-gradient(circle, rgba(204,0,0,0.15) 0%, transparent 70%);
           pointer-events: none;
@@ -123,11 +123,11 @@ class SiteHero extends LitElement {
 
           <dl style="display: flex; gap: 0; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 28px;">
             ${[
-              { value: 'Est. 2008', label: 'In operation' },
-              { value: '50–100',   label: 'Engineers per project' },
-              { value: '3',        label: 'Core departments' },
-              { value: '16',       label: 'Industries served' },
-            ].map((stat, i) => html`
+        { value: 'Est. 2008', label: 'In operation' },
+        { value: '50–100', label: 'Engineers per project' },
+        { value: '3', label: 'Core departments' },
+        { value: '16', label: 'Industries served' },
+      ].map((stat, i) => html`
               <div style="
                 padding: ${i === 0 ? '0 36px 0 0' : '0 36px'};
                 border-right: ${i < 3 ? '1px solid rgba(255,255,255,0.15)' : 'none'};
