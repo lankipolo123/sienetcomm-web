@@ -28,10 +28,19 @@ class HomeProductsTeaser extends LitElement {
           ${PRODUCTS.slice(0, 8).map(p => html`
             <li
               @click=${() => window.location.hash = '#products'}
-              style="background: white; border: 1px solid #e5e7eb; border-radius: 14px; padding: 20px; cursor: pointer;"
+              style="background: white; border: 1px solid #e5e7eb; border-radius: 14px; overflow: hidden; cursor: pointer; transition: box-shadow 0.15s, transform 0.15s;"
+              @mouseenter=${e => { e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.1)'; e.currentTarget.style.transform = 'translateY(-2px)' }}
+              @mouseleave=${e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'none' }}
             >
-              <h3 style="font-size: 0.8rem; font-weight: 600; color: #111827; margin: 0 0 8px; line-height: 1.3;">${p.category}</h3>
-              <p style="font-size: 0.72rem; color: #9ca3af; margin: 0;">${p.brands.slice(0, 3).join(', ')}${p.brands.length > 3 ? ` +${p.brands.length - 3} more` : ''}</p>
+              <div style="background: ${p.color}; padding: 18px 20px 14px; display: flex; flex-direction: column; gap: 10px;">
+                <span style="font-size: 1.8rem; line-height: 1;">${p.icon}</span>
+                <h3 style="font-size: 0.78rem; font-weight: 600; color: white; margin: 0; line-height: 1.35;">${p.category}</h3>
+              </div>
+              <div style="padding: 14px 20px;">
+                <p style="font-size: 0.72rem; color: #6b7280; margin: 0; line-height: 1.65;">
+                  ${p.brands.slice(0, 3).join(' · ')}${p.brands.length > 3 ? html`<span style="color: #9ca3af;"> +${p.brands.length - 3} more</span>` : ''}
+                </p>
+              </div>
             </li>
           `)}
         </ul>
