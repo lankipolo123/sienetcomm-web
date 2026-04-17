@@ -1,0 +1,300 @@
+/* ==============================================
+   SIENETCOMM — Mobile Responsive Overrides
+   Mobile-first: max-width 767px
+   ============================================== */
+
+@media (max-width: 767px) {
+
+  /* ── GLOBAL SECTION PADDING ───────────────── */
+  site-hero section,
+  page-hero section,
+  about-content section,
+  home-departments section,
+  site-services section,
+  services-detail section,
+  services-cta section,
+  home-products-teaser section,
+  products-cta section,
+  contact-content section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 44px !important;
+    padding-bottom: 44px !important;
+  }
+
+  products-brands > div:first-child {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  products-brands > section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 28px !important;
+    padding-bottom: 44px !important;
+  }
+
+  /* ── HERO ─────────────────────────────────── */
+  site-hero h1 {
+    font-size: 1.8rem !important;
+    letter-spacing: -0.3px !important;
+  }
+
+  site-hero p {
+    font-size: 0.9rem !important;
+  }
+
+  /* Stats row → 2×2 grid */
+  site-hero dl {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px !important;
+    padding-top: 20px !important;
+  }
+
+  site-hero dl > div {
+    padding: 0 !important;
+    border-right: none !important;
+    flex-shrink: unset !important;
+  }
+
+  /* ── PAGE HERO ────────────────────────────── */
+  page-hero h1 {
+    font-size: 1.8rem !important;
+    max-width: 100% !important;
+  }
+
+  /* Stats row → 2×2 grid */
+  page-hero dl {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px !important;
+    padding-top: 20px !important;
+  }
+
+  page-hero dl > div {
+    flex-shrink: unset !important;
+  }
+
+  /* ── ABOUT CONTENT ────────────────────────── */
+
+  /* Mission & Vision: 2-col → 1-col */
+  about-content div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Departments: 3-col → 1-col */
+  about-content div[style*="repeat(3, 1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Workforce: auto-fill minmax → 1-col */
+  about-content div[style*="auto-fill"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Manpower callout banner */
+  about-content div[style*="justify-content: space-between"][style*="0a2314"] {
+    flex-direction: column !important;
+    padding: 24px 20px !important;
+    align-items: flex-start !important;
+  }
+
+  about-content div[style*="justify-content: space-between"][style*="0a2314"] button {
+    width: 100% !important;
+  }
+
+  /* Registration cards */
+  about-content div[style*="justify-content: center"][style*="flex-wrap: wrap"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  /* ── HOME DEPARTMENTS ─────────────────────── */
+  home-departments ul[style*="repeat(3, 1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── SITE SERVICES ────────────────────────── */
+  site-services div[style*="repeat(2, 1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  site-services div[style*="repeat(2, 1fr)"] > div {
+    min-height: 220px !important;
+  }
+
+  /* ── SERVICES DETAIL ──────────────────────── */
+
+  /* Each service card: switch from grid to flex-col */
+  services-detail div[style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Image panel: always first (order -1), shorter */
+  services-detail div[style*="min-height: 360px"] {
+    min-height: 200px !important;
+    order: -1 !important;
+  }
+
+  /* Text panel: always after image */
+  services-detail div[style*="padding: 40px 44px"] {
+    padding: 24px 20px !important;
+    order: 1 !important;
+  }
+
+  /* ── SERVICES CTA ─────────────────────────── */
+  services-cta h2 {
+    font-size: 1.5rem !important;
+  }
+
+  services-cta nav {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+
+  services-cta nav > * {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  /* ── HOME PRODUCTS TEASER ─────────────────── */
+  home-products-teaser ul[style*="repeat(4, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* ── PRODUCTS BRANDS ──────────────────────── */
+  products-brands div[style*="minmax(340px"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── PRODUCTS CTA ─────────────────────────── */
+  products-cta h2 {
+    font-size: 1.4rem !important;
+  }
+
+  products-cta nav {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+
+  products-cta nav > * {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    display: block !important;
+  }
+
+  /* ── CONTACT CONTENT ──────────────────────── */
+
+  /* 4-col contact info cards → 2-col */
+  contact-content div[style*="repeat(4, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Form + offices side-by-side → stacked */
+  contact-content div[style*="1.2fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Name + email fields side-by-side → stacked */
+  contact-content div[style*="1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── SITE ABOUT (HOME) ────────────────────── */
+
+  /* Stats row: 4-col → 2-col */
+  site-about div[style*="repeat(4, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Card row: stack accordion items */
+  site-about .flex.flex-row {
+    flex-direction: column !important;
+  }
+
+  /* ── SITE FOOTER ──────────────────────────── */
+
+  /* Main grid: 4-col → 2-col */
+  site-footer div[style*="2fr 1fr 1fr 1fr"] {
+    grid-template-columns: 1fr 1fr !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    gap: 32px !important;
+  }
+
+  /* Bottom bar: side-by-side → stacked */
+  site-footer .justify-between {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 6px !important;
+    text-align: center !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  site-footer .justify-between .flex.gap-6 {
+    flex-direction: column !important;
+    gap: 2px !important;
+    align-items: center !important;
+  }
+
+  /* ── SITE CLIENTS ─────────────────────────── */
+  site-clients .px-10 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* ── SITE BANNER ──────────────────────────── */
+  site-banner .text-xl {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* ── TABLET: 768px–1023px ─────────────────── */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* Departments: 3-col → 2-col on tablet */
+  home-departments ul[style*="repeat(3, 1fr)"],
+  about-content div[style*="repeat(3, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Services detail: keep single col on narrow tablet */
+  services-detail div[style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  services-detail div[style*="min-height: 360px"] {
+    min-height: 240px !important;
+    order: -1 !important;
+  }
+
+  services-detail div[style*="padding: 40px 44px"] {
+    order: 1 !important;
+  }
+
+  /* Products teaser: 4-col → 2-col */
+  home-products-teaser ul[style*="repeat(4, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Contact cards: 4-col → 2-col */
+  contact-content div[style*="repeat(4, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Hero stats */
+  site-hero dl > div {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}

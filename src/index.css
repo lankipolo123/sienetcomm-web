@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./responsive.css";
 
 body {
   margin: 0;
@@ -16,6 +17,15 @@ site-services,
 site-clients,
 site-about,
 accordion-item,
-site-footer {
+site-footer,
+page-hero,
+about-content,
+home-departments,
+services-detail,
+services-cta,
+home-products-teaser,
+products-brands,
+products-cta,
+contact-content {
   display: block;
 }
