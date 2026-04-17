@@ -246,15 +246,42 @@
     align-items: center !important;
   }
 
+  /* ── NAV LOGO ─────────────────────────────── */
+  nav-logo img {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  nav-logo span {
+    font-size: 0.95rem !important;
+  }
+
   /* ── SITE CLIENTS ─────────────────────────── */
-  site-clients .px-10 {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+  site-clients section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  site-clients h2 {
+    font-size: 1.6rem !important;
+  }
+
+  site-clients .h-20 {
+    height: 3rem !important;
   }
 
   /* ── SITE BANNER ──────────────────────────── */
+  site-banner section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
   site-banner .text-xl {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
   }
 }
 
