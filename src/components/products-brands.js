@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit'
 import { PRODUCTS } from '@/constants/products.js'
+import { productIcon } from '@/utils/product-icon.js'
 
 class ProductsBrands extends LitElement {
   createRenderRoot() { return this; }
@@ -65,7 +66,10 @@ class ProductsBrands extends LitElement {
               overflow: hidden;
               box-shadow: 0 2px 12px rgba(0,0,0,0.05);
             ">
-              <div style="background: linear-gradient(135deg, #0a2314 0%, ${p.color} 100%); padding: 24px 28px 20px;">
+              <div style="background: linear-gradient(135deg, #0a2314 0%, ${p.color} 100%); padding: 20px 28px 18px; display: flex; align-items: center; gap: 14px;">
+                <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  ${productIcon(p.category, 'white', 20)}
+                </div>
                 <h3 style="font-size: 0.95rem; font-weight: 600; color: white; margin: 0; line-height: 1.4;">${p.category}</h3>
               </div>
               <div style="padding: 20px 28px 24px;">
