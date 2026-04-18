@@ -50,7 +50,7 @@ class SiteFooter extends LitElement {
           </div>
 
           <!-- Offices -->
-          <div>
+          <div class="sm:col-span-2 lg:col-span-1">
             <p class="text-xs uppercase tracking-widest mb-5 font-semibold" style="color: rgba(255,255,255,0.4);">Our Offices</p>
             <div class="mb-5">
               <div class="text-xs mb-1" style="color: #4ade80;">Main Office</div>
