@@ -20,29 +20,29 @@ class ProductsBrands extends LitElement {
   render() {
     return html`
       <!-- Wrapping pill filters -->
-      <div style="background: white; border-bottom: 1px solid #e5e7eb; padding: 20px 80px;">
-        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+      <div class="products-pill-wrap" style="background: white; border-bottom: 1px solid #e5e7eb; padding: 16px 80px;">
+        <div class="filter-pills" style="display: flex; flex-wrap: wrap; gap: 6px;">
           <button
             @click=${() => this._active = 'all'}
             style="
-              padding: 6px 16px; font-size: 0.78rem;
+              padding: 5px 12px; font-size: 0.72rem;
               font-weight: ${this._active === 'all' ? '600' : '400'};
               color: ${this._active === 'all' ? 'white' : '#6b7280'};
               background: ${this._active === 'all' ? '#1A6B2A' : 'white'};
               border: 1px solid ${this._active === 'all' ? '#1A6B2A' : '#e5e7eb'};
-              border-radius: 99px; cursor: pointer; white-space: nowrap;
+              border-radius: 99px; cursor: pointer;
             "
           >All Categories</button>
           ${PRODUCTS.map(p => html`
             <button
               @click=${() => this._active = p.category}
               style="
-                padding: 6px 16px; font-size: 0.78rem;
+                padding: 5px 12px; font-size: 0.72rem;
                 font-weight: ${this._active === p.category ? '600' : '400'};
                 color: ${this._active === p.category ? 'white' : '#6b7280'};
                 background: ${this._active === p.category ? '#1A6B2A' : 'white'};
                 border: 1px solid ${this._active === p.category ? '#1A6B2A' : '#e5e7eb'};
-                border-radius: 99px; cursor: pointer; white-space: nowrap;
+                border-radius: 99px; cursor: pointer;
               "
             >${p.category}</button>
           `)}

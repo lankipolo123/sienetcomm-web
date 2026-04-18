@@ -206,6 +206,17 @@
     grid-template-columns: 1fr !important;
   }
 
+  products-brands .products-pill-wrap {
+    padding: 14px 20px !important;
+  }
+
+  products-brands .filter-pills button {
+    word-break: break-word !important;
+    white-space: normal !important;
+    text-align: left !important;
+    max-width: 100% !important;
+  }
+
   /* ── PRODUCTS CTA ─────────────────────────── */
   products-cta h2 {
     font-size: 1.4rem !important;
