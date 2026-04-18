@@ -35,13 +35,30 @@
   }
 
   /* ── HERO ─────────────────────────────────── */
+  site-hero section {
+    padding: 44px 20px !important;
+  }
+
   site-hero h1 {
-    font-size: 1.8rem !important;
+    font-size: 1.65rem !important;
     letter-spacing: -0.3px !important;
   }
 
   site-hero p {
-    font-size: 0.9rem !important;
+    font-size: 0.875rem !important;
+  }
+
+  /* 3 buttons → all in one row, equal width */
+  site-hero div[style*="gap: 12px"] {
+    flex-wrap: nowrap !important;
+    gap: 7px !important;
+  }
+
+  site-hero div[style*="gap: 12px"] button {
+    flex: 1 !important;
+    font-size: 0.72rem !important;
+    padding: 10px 6px !important;
+    white-space: nowrap !important;
   }
 
   /* Stats row → 2×2 grid */
