@@ -7,6 +7,7 @@ function syncViewport() {
 }
 syncViewport()
 window.addEventListener('resize', syncViewport)
+new ResizeObserver(syncViewport).observe(document.documentElement)
 
 export class AppMain extends LitElement {
   createRenderRoot() { return this; }
