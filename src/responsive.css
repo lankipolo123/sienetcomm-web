@@ -36,16 +36,26 @@
 
   /* ── HERO ─────────────────────────────────── */
   site-hero section {
-    padding: 44px 20px !important;
+    padding: 36px 20px 44px !important;
+    min-height: unset !important;
+    overflow: visible !important;
+  }
+
+  /* Badge: shrink letter-spacing so it doesn't overflow */
+  site-hero span[style*="letter-spacing: 3px"] {
+    letter-spacing: 1.5px !important;
+    font-size: 10px !important;
   }
 
   site-hero h1 {
-    font-size: 1.65rem !important;
+    font-size: 1.6rem !important;
     letter-spacing: -0.3px !important;
+    word-break: break-word !important;
   }
 
   site-hero p {
-    font-size: 0.875rem !important;
+    font-size: 0.85rem !important;
+    max-width: 100% !important;
   }
 
   /* 3 buttons → all in one row, equal width */
