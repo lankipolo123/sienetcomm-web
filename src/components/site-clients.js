@@ -1,6 +1,7 @@
 import { LitElement, html } from 'lit'
 import { CLIENTS, CLIENT_CATEGORIES } from '@/constants/clients.js'
 import { fadeSlideUp } from '@/designs/clients-animations.js'
+import '@/components/filter-pill.js'
 
 class SiteClients extends LitElement {
   createRenderRoot() { return this; }
@@ -35,21 +36,11 @@ class SiteClients extends LitElement {
         <!-- Filter pills — wraps on desktop, scrolls horizontally on mobile -->
         <div class="filter-pills" style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 32px;">
           ${CLIENT_CATEGORIES.map(cat => html`
-            <button
-              @click=${() => this.activeFilter = cat}
-              style="
-                padding: 5px 12px;
-                font-size: 0.72rem;
-                font-weight: ${this.activeFilter === cat ? '600' : '400'};
-                color: ${this.activeFilter === cat ? 'white' : '#6b7280'};
-                background: ${this.activeFilter === cat ? '#1A6B2A' : 'white'};
-                border: 1px solid ${this.activeFilter === cat ? '#1A6B2A' : '#e5e7eb'};
-                border-radius: 99px;
-                cursor: pointer;
-                white-space: nowrap;
-                flex-shrink: 0;
-              "
-            >${cat}</button>
+            <filter-pill
+              label=${cat}
+              ?active=${this.activeFilter === cat}
+              @pill-select=${() => this.activeFilter = cat}
+            ></filter-pill>
           `)}
         </div>
 

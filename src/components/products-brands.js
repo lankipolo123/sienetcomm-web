@@ -1,6 +1,7 @@
 import { LitElement, html } from 'lit'
 import { PRODUCTS } from '@/constants/products.js'
 import { productIcon } from '@/utils/product-icon.js'
+import '@/components/filter-pill.js'
 
 class ProductsBrands extends LitElement {
   createRenderRoot() { return this; }
@@ -22,29 +23,17 @@ class ProductsBrands extends LitElement {
       <!-- Wrapping pill filters -->
       <div class="products-pill-wrap" style="background: white; border-bottom: 1px solid #e5e7eb; padding: 16px 80px;">
         <div class="filter-pills" style="display: flex; flex-wrap: wrap; gap: 6px;">
-          <button
-            @click=${() => this._active = 'all'}
-            style="
-              padding: 5px 12px; font-size: 0.72rem;
-              font-weight: ${this._active === 'all' ? '600' : '400'};
-              color: ${this._active === 'all' ? 'white' : '#6b7280'};
-              background: ${this._active === 'all' ? '#1A6B2A' : 'white'};
-              border: 1px solid ${this._active === 'all' ? '#1A6B2A' : '#e5e7eb'};
-              border-radius: 99px; cursor: pointer;
-            "
-          >All Categories</button>
+          <filter-pill
+            label="All Categories"
+            ?active=${this._active === 'all'}
+            @pill-select=${() => this._active = 'all'}
+          ></filter-pill>
           ${PRODUCTS.map(p => html`
-            <button
-              @click=${() => this._active = p.category}
-              style="
-                padding: 5px 12px; font-size: 0.72rem;
-                font-weight: ${this._active === p.category ? '600' : '400'};
-                color: ${this._active === p.category ? 'white' : '#6b7280'};
-                background: ${this._active === p.category ? '#1A6B2A' : 'white'};
-                border: 1px solid ${this._active === p.category ? '#1A6B2A' : '#e5e7eb'};
-                border-radius: 99px; cursor: pointer;
-              "
-            >${p.category}</button>
+            <filter-pill
+              label=${p.category}
+              ?active=${this._active === p.category}
+              @pill-select=${() => this._active = p.category}
+            ></filter-pill>
           `)}
         </div>
       </div>
