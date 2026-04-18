@@ -283,6 +283,24 @@
   site-banner .text-xl {
     font-size: 1rem !important;
   }
+
+  /* ── FILTER PILLS (products + clients) ────── */
+  /* Long category names must wrap inside the pill on mobile */
+  products-brands button[style*="white-space: nowrap"],
+  site-clients button[style*="white-space: nowrap"] {
+    white-space: normal !important;
+    word-break: break-word !important;
+    text-align: left !important;
+  }
+
+  /* ── FOOTER LINKS / EMAIL ─────────────────── */
+  site-footer a {
+    word-break: break-all !important;
+  }
+
+  site-footer .text-sm {
+    font-size: 0.78rem !important;
+  }
 }
 
 /* ── TABLET: 768px–1023px ─────────────────── */
