@@ -135,10 +135,15 @@
   /* ── SITE SERVICES ────────────────────────── */
   site-services div[style*="repeat(2, 1fr)"] {
     grid-template-columns: 1fr !important;
+    gap: 14px !important;
   }
 
   site-services div[style*="repeat(2, 1fr)"] > div {
-    min-height: 220px !important;
+    min-height: 260px !important;
+  }
+
+  site-services h3 {
+    font-size: 1.15rem !important;
   }
 
   /* ── SERVICES DETAIL ──────────────────────── */

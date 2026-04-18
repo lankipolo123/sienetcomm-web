@@ -37,15 +37,15 @@ class SiteServices extends LitElement {
               "
               @click=${() => window.location.hash = '#services'}
             >
-              <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,35,20,0.95) 0%, rgba(10,35,20,0.4) 60%, rgba(0,0,0,0.1) 100%);"></div>
+              <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(5,18,10,0.97) 0%, rgba(10,35,20,0.82) 50%, rgba(10,35,20,0.35) 100%);"></div>
               <div style="position: relative; z-index: 1; padding: 28px; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; box-sizing: border-box;">
                 <h3 style="font-size: 1.1rem; font-weight: 700; color: white; margin: 0 0 5px;">${s.title}</h3>
-                <p style="font-size: 0.75rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 14px;">${s.subtitle}</p>
+                <p style="font-size: 0.72rem; color: rgba(255,255,255,0.75); text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 12px;">${s.subtitle}</p>
                 <div style="display: flex; flex-wrap: wrap; gap: 6px;">
                   ${s.items.slice(0, 3).map(item => html`
-                    <span style="background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.8); font-size: 0.7rem; padding: 3px 10px; border-radius: 99px; border: 1px solid rgba(255,255,255,0.15);">${item.split('/')[0].trim()}</span>
+                    <span style="background: rgba(255,255,255,0.18); color: white; font-size: 0.68rem; padding: 3px 10px; border-radius: 99px; border: 1px solid rgba(255,255,255,0.25);">${item.split('/')[0].trim()}</span>
                   `)}
-                  <span style="background: rgba(26,107,42,0.6); color: rgba(255,255,255,0.9); font-size: 0.7rem; padding: 3px 10px; border-radius: 99px;">+${s.items.length - 3} more</span>
+                  ${s.items.length > 3 ? html`<span style="background: rgba(26,107,42,0.8); color: white; font-size: 0.68rem; padding: 3px 10px; border-radius: 99px;">+${s.items.length - 3} more</span>` : ''}
                 </div>
               </div>
             </div>
