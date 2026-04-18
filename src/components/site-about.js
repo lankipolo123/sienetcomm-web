@@ -59,11 +59,11 @@ class SiteAbout extends LitElement {
         <div class="flex flex-row gap-3 flex-wrap justify-center items-stretch">
 
           <!-- Headquarters card -->
-          <div class="flex-1 self-stretch" style="min-width: 260px; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; overflow: hidden;">
+          <div class="flex-1 self-stretch" style="min-width: 260px; background: white; border-radius: 16px; overflow: hidden;">
             <div style="padding: 18px 20px 14px;">
-              <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin: 0 0 4px;">Office</p>
-              <h3 style="font-size: 0.95rem; font-weight: 700; color: white; margin: 0 0 10px;">Headquarters</h3>
-              <p style="font-size: 0.82rem; color: rgba(255,255,255,0.7); line-height: 1.65; margin: 0 0 14px;">
+              <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: #9ca3af; margin: 0 0 4px;">Office</p>
+              <h3 style="font-size: 0.95rem; font-weight: 700; color: #111827; margin: 0 0 10px;">Headquarters</h3>
+              <p style="font-size: 0.82rem; color: #6b7280; line-height: 1.65; margin: 0 0 14px;">
                 Unit 3D Julia C. Pascual Realty<br>
                 No. 2 Kadalagahan St.<br>
                 Dolores, Taytay, Rizal 1920
@@ -78,11 +78,11 @@ class SiteAbout extends LitElement {
           </div>
 
           <!-- Coverage card -->
-          <div class="flex-1 self-stretch" style="min-width: 260px; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; overflow: hidden;">
+          <div class="flex-1 self-stretch" style="min-width: 260px; background: white; border-radius: 16px; overflow: hidden;">
             <div style="padding: 18px 20px 14px;">
-              <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin: 0 0 4px;">Reach</p>
-              <h3 style="font-size: 0.95rem; font-weight: 700; color: white; margin: 0 0 10px;">Coverage</h3>
-              <p style="font-size: 0.82rem; color: rgba(255,255,255,0.7); line-height: 1.65; margin: 0 0 14px;">
+              <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: #9ca3af; margin: 0 0 4px;">Reach</p>
+              <h3 style="font-size: 0.95rem; font-weight: 700; color: #111827; margin: 0 0 10px;">Coverage</h3>
+              <p style="font-size: 0.82rem; color: #6b7280; line-height: 1.65; margin: 0 0 14px;">
                 Luzon · Visayas · Mindanao<br>
                 Nationwide project deployment<br>
                 across the Philippines
