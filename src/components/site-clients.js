@@ -33,13 +33,13 @@ class SiteClients extends LitElement {
         <h2 class="text-3xl font-semibold mb-6" style="color: #1A6B2A;">Our Clients</h2>
 
         <!-- Filter pills — wraps on desktop, scrolls horizontally on mobile -->
-        <div class="filter-pills" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px;">
+        <div class="filter-pills" style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 32px; max-height: 84px; overflow: hidden;">
           ${CLIENT_CATEGORIES.map(cat => html`
             <button
               @click=${() => this.activeFilter = cat}
               style="
-                padding: 6px 16px;
-                font-size: 0.78rem;
+                padding: 5px 12px;
+                font-size: 0.72rem;
                 font-weight: ${this.activeFilter === cat ? '600' : '400'};
                 color: ${this.activeFilter === cat ? 'white' : '#6b7280'};
                 background: ${this.activeFilter === cat ? '#1A6B2A' : 'white'};

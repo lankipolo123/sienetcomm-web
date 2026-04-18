@@ -259,13 +259,12 @@
     font-size: 1rem !important;
   }
 
-  /* ── FILTER PILLS (products + clients) ────── */
-  /* Long category names must wrap inside the pill on mobile */
-  products-brands button[style*="white-space: nowrap"],
-  site-clients button[style*="white-space: nowrap"] {
-    white-space: normal !important;
-    word-break: break-word !important;
-    text-align: left !important;
+  /* ── FILTER PILLS (clients) ────────────────── */
+  /* Smaller pills on mobile — font/padding already set inline; cap at 2 rows */
+  site-clients .filter-pills {
+    max-height: 78px !important;
+    overflow: hidden !important;
+    gap: 5px !important;
   }
 
   /* ── FOOTER LINKS / EMAIL ─────────────────── */
