@@ -49,25 +49,23 @@ class SiteFooter extends LitElement {
             <p class="mt-3 text-xs" style="color: rgba(255,255,255,0.4);">Fax: +632-82844732</p>
           </div>
 
-          <!-- Offices -->
-          <div class="col-span-2 lg:col-span-1">
-            <p class="text-xs uppercase tracking-widest mb-5 font-semibold" style="color: rgba(255,255,255,0.4);">Our Offices</p>
-            <div class="mb-5">
-              <div class="text-xs mb-1" style="color: #4ade80;">Main Office</div>
-              <div class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.65);">
-                Unit 3D Julia C. Pascual Realty<br>
-                No. 2 Kadalagahan St.<br>
-                Dolores, Taytay, Rizal 1920
-              </div>
+          <!-- Offices: Main (left) | Satellite + web (right) -->
+          <div>
+            <p class="text-xs uppercase tracking-widest mb-5 font-semibold" style="color: rgba(255,255,255,0.4);">Main Office</p>
+            <div class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.65);">
+              Unit 3D Julia C. Pascual Realty<br>
+              No. 2 Kadalagahan St.<br>
+              Dolores, Taytay, Rizal 1920
             </div>
-            <div>
-              <div class="text-xs mb-1" style="color: #4ade80;">Satellite Office</div>
-              <div class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.65);">
-                P-5 Namantao<br>
-                Daraga, Albay
-              </div>
+          </div>
+
+          <div>
+            <p class="text-xs uppercase tracking-widest mb-5 font-semibold" style="color: rgba(255,255,255,0.4);">Satellite Office</p>
+            <div class="text-sm leading-relaxed mb-4" style="color: rgba(255,255,255,0.65);">
+              P-5 Namantao<br>
+              Daraga, Albay
             </div>
-            <a href="https://www.sienetcomm.com" target="_blank" class="inline-block mt-4 text-xs" style="color: rgba(255,255,255,0.4); text-decoration: none;">
+            <a href="https://www.sienetcomm.com" target="_blank" class="inline-block text-xs" style="color: rgba(255,255,255,0.4); text-decoration: none;">
               www.sienetcomm.com ↗
             </a>
           </div>
