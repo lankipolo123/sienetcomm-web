@@ -7,11 +7,11 @@ class SiteFooter extends LitElement {
     return html`
       <footer>
 
-        <!-- Main grid: 1-col mobile → 2-col tablet → 4-col desktop -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] px-5 py-12 gap-10 md:px-10 md:py-14" style="background: #111827;">
+        <!-- Main grid: 2-col mobile → 4-col desktop -->
+        <div class="grid grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] px-5 py-12 gap-8 md:px-10 md:py-14" style="background: #111827;">
 
           <!-- Brand column -->
-          <div class="sm:col-span-2 lg:col-span-1">
+          <div class="col-span-2 lg:col-span-1">
             <div class="mb-4">
               <div class="text-white font-bold tracking-wide" style="font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem;">SIENETCOMM INC.</div>
               <div class="text-xs" style="color: rgba(255,255,255,0.45);">ICT & Civil Works Solutions</div>
@@ -50,7 +50,7 @@ class SiteFooter extends LitElement {
           </div>
 
           <!-- Offices -->
-          <div class="sm:col-span-2 lg:col-span-1">
+          <div class="col-span-2 lg:col-span-1">
             <p class="text-xs uppercase tracking-widest mb-5 font-semibold" style="color: rgba(255,255,255,0.4);">Our Offices</p>
             <div class="mb-5">
               <div class="text-xs mb-1" style="color: #4ade80;">Main Office</div>

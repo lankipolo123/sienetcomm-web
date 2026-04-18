@@ -260,12 +260,7 @@
   }
 
   /* ── FILTER PILLS (clients) ────────────────── */
-  /* Smaller pills on mobile — font/padding already set inline; cap at 2 rows */
-  site-clients .filter-pills {
-    max-height: 78px !important;
-    overflow: hidden !important;
-    gap: 5px !important;
-  }
+  /* Smaller font/padding already set inline on pills */
 
   /* ── FOOTER LINKS / EMAIL ─────────────────── */
   site-footer a {
