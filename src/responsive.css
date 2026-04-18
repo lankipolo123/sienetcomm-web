@@ -84,9 +84,25 @@
   }
 
   /* ── PAGE HERO ────────────────────────────── */
+  page-hero section {
+    padding: 44px 20px 40px !important;
+    overflow: visible !important;
+  }
+
+  page-hero span[style*="letter-spacing: 3px"] {
+    letter-spacing: 1.5px !important;
+    font-size: 10px !important;
+  }
+
   page-hero h1 {
-    font-size: 1.8rem !important;
+    font-size: 1.7rem !important;
     max-width: 100% !important;
+    word-break: break-word !important;
+  }
+
+  page-hero p {
+    max-width: 100% !important;
+    font-size: 0.875rem !important;
   }
 
   page-hero dl {
