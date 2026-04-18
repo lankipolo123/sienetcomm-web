@@ -60,38 +60,35 @@ class SiteAbout extends LitElement {
 
           <!-- Headquarters card -->
           <div class="flex-1 self-stretch" style="min-width: 260px; background: white; border-radius: 16px; overflow: hidden;">
-            <div style="padding: 18px 20px 14px;">
-              <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: #9ca3af; margin: 0 0 4px;">Office</p>
-              <h3 style="font-size: 0.95rem; font-weight: 700; color: #111827; margin: 0 0 10px;">Headquarters</h3>
-              <p style="font-size: 0.82rem; color: #6b7280; line-height: 1.65; margin: 0 0 14px;">
+            <div style="padding: 12px 16px 10px;">
+              <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: #9ca3af; margin: 0 0 2px;">Office</p>
+              <h3 style="font-size: 0.88rem; font-weight: 700; color: #111827; margin: 0 0 5px;">Headquarters</h3>
+              <p style="font-size: 0.78rem; color: #6b7280; line-height: 1.5; margin: 0;">
                 Unit 3D Julia C. Pascual Realty<br>
-                No. 2 Kadalagahan St.<br>
-                Dolores, Taytay, Rizal 1920
+                No. 2 Kadalagahan St., Dolores, Taytay, Rizal 1920
               </p>
             </div>
             <iframe
               src="https://maps.google.com/maps?q=Kadalagahan+St+Dolores+Taytay+Rizal+Philippines&output=embed"
               width="100%" height="180"
-              style="border: none; display: block;"
+              style="border: none; display: block; margin-top: 10px;"
               loading="lazy"
             ></iframe>
           </div>
 
           <!-- Coverage card -->
           <div class="flex-1 self-stretch" style="min-width: 260px; background: white; border-radius: 16px; overflow: hidden;">
-            <div style="padding: 18px 20px 14px;">
-              <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: #9ca3af; margin: 0 0 4px;">Reach</p>
-              <h3 style="font-size: 0.95rem; font-weight: 700; color: #111827; margin: 0 0 10px;">Coverage</h3>
-              <p style="font-size: 0.82rem; color: #6b7280; line-height: 1.65; margin: 0 0 14px;">
-                Luzon · Visayas · Mindanao<br>
-                Nationwide project deployment<br>
-                across the Philippines
+            <div style="padding: 12px 16px 10px;">
+              <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: #9ca3af; margin: 0 0 2px;">Reach</p>
+              <h3 style="font-size: 0.88rem; font-weight: 700; color: #111827; margin: 0 0 5px;">Coverage</h3>
+              <p style="font-size: 0.78rem; color: #6b7280; line-height: 1.5; margin: 0;">
+                Luzon · Visayas · Mindanao — nationwide project deployment across the Philippines
               </p>
             </div>
             <iframe
               src="https://maps.google.com/maps?q=Philippines&output=embed"
               width="100%" height="180"
-              style="border: none; display: block;"
+              style="border: none; display: block; margin-top: 10px;"
               loading="lazy"
             ></iframe>
           </div>
