@@ -1,9 +1,10 @@
 /* ==============================================
-   SIENETCOMM — Mobile Responsive Overrides
-   Mobile-first: max-width 767px
+   SIENETCOMM — Responsive Overrides
+   Driven by JS: syncViewport() sets data-viewport on <html>
+   so changes apply instantly on resize (incl. DevTools simulation).
    ============================================== */
 
-@media (max-width: 767px) {
+:root[data-viewport="mobile"] {
 
   /* ── GLOBAL SECTION PADDING ───────────────── */
   site-hero section,
@@ -41,7 +42,6 @@
     overflow: visible !important;
   }
 
-  /* Badge: shrink letter-spacing so it doesn't overflow */
   site-hero span[style*="letter-spacing: 3px"] {
     letter-spacing: 1.5px !important;
     font-size: 10px !important;
@@ -58,7 +58,6 @@
     max-width: 100% !important;
   }
 
-  /* 3 buttons → all in one row, equal width */
   site-hero div[style*="gap: 12px"] {
     flex-wrap: nowrap !important;
     gap: 7px !important;
@@ -71,7 +70,6 @@
     white-space: nowrap !important;
   }
 
-  /* Stats row → 2×2 grid */
   site-hero dl {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
@@ -91,7 +89,6 @@
     max-width: 100% !important;
   }
 
-  /* Stats row → 2×2 grid */
   page-hero dl {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
@@ -104,23 +101,18 @@
   }
 
   /* ── ABOUT CONTENT ────────────────────────── */
-
-  /* Mission & Vision: 2-col → 1-col */
   about-content div[style*="grid-template-columns: 1fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
 
-  /* Departments: 3-col → 1-col */
   about-content div[style*="repeat(3, 1fr)"] {
     grid-template-columns: 1fr !important;
   }
 
-  /* Workforce: auto-fill minmax → 1-col */
   about-content div[style*="auto-fill"] {
     grid-template-columns: 1fr !important;
   }
 
-  /* Manpower callout banner */
   about-content div[style*="justify-content: space-between"][style*="0a2314"] {
     flex-direction: column !important;
     padding: 24px 20px !important;
@@ -131,7 +123,6 @@
     width: 100% !important;
   }
 
-  /* Registration cards */
   about-content div[style*="justify-content: center"][style*="flex-wrap: wrap"] {
     flex-direction: column !important;
     align-items: stretch !important;
@@ -157,20 +148,16 @@
   }
 
   /* ── SERVICES DETAIL ──────────────────────── */
-
-  /* Each service card: switch from grid to flex-col */
   services-detail div[style*="grid-template-columns"] {
     display: flex !important;
     flex-direction: column !important;
   }
 
-  /* Image panel: always first (order -1), shorter */
   services-detail div[style*="min-height: 360px"] {
     min-height: 200px !important;
     order: -1 !important;
   }
 
-  /* Text panel: always after image */
   services-detail div[style*="padding: 40px 44px"] {
     padding: 24px 20px !important;
     order: 1 !important;
@@ -222,36 +209,26 @@
   }
 
   /* ── CONTACT CONTENT ──────────────────────── */
-
-  /* 4-col contact info cards → 2-col */
   contact-content div[style*="repeat(4, 1fr)"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  /* Form + offices side-by-side → stacked */
   contact-content div[style*="1.2fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
 
-  /* Name + email fields side-by-side → stacked */
   contact-content div[style*="1fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
 
   /* ── SITE ABOUT (HOME) ────────────────────── */
-
-  /* Stats row: 4-col → 2-col */
   site-about div[style*="repeat(4, 1fr)"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  /* Card row: stack accordion items */
   site-about .flex.flex-row {
     flex-direction: column !important;
   }
-
-  /* ── SITE FOOTER ──────────────────────────── */
-  /* Footer uses Tailwind responsive classes — no !important overrides needed */
 
   /* ── NAV LOGO ─────────────────────────────── */
   nav-logo img {
@@ -291,9 +268,6 @@
     font-size: 1rem !important;
   }
 
-  /* ── FILTER PILLS (clients) ────────────────── */
-  /* Smaller font/padding already set inline on pills */
-
   /* ── FOOTER LINKS / EMAIL ─────────────────── */
   site-footer a {
     word-break: break-all !important;
@@ -304,16 +278,14 @@
   }
 }
 
-/* ── TABLET: 768px–1023px ─────────────────── */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* ── TABLET ───────────────────────────────── */
+:root[data-viewport="tablet"] {
 
-  /* Departments: 3-col → 2-col on tablet */
   home-departments ul[style*="repeat(3, 1fr)"],
   about-content div[style*="repeat(3, 1fr)"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  /* Services detail: keep single col on narrow tablet */
   services-detail div[style*="grid-template-columns"] {
     display: flex !important;
     flex-direction: column !important;
@@ -328,17 +300,14 @@
     order: 1 !important;
   }
 
-  /* Products teaser: 4-col → 2-col */
   home-products-teaser ul[style*="repeat(4, 1fr)"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  /* Contact cards: 4-col → 2-col */
   contact-content div[style*="repeat(4, 1fr)"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  /* Hero stats */
   site-hero dl > div {
     padding-left: 20px !important;
     padding-right: 20px !important;
