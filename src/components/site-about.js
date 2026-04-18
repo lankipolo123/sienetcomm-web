@@ -1,5 +1,4 @@
 import { LitElement, html } from 'lit'
-import '@/components/accordion-item.js'
 import '@/components/registration-card.js'
 
 const STATS = [
@@ -59,36 +58,43 @@ class SiteAbout extends LitElement {
         <!-- card row -->
         <div class="flex flex-row gap-3 flex-wrap justify-center items-stretch">
 
-          <accordion-item
-            class="flex-1 self-stretch"
-            label="Headquarters"
-            .content=${html`
-              <p class="text-sm text-gray-600 mb-3">
-                Unit 3D Julia C. Pascual Realty, No. 2 Kadalagahan St.<br>
-                Dolores, Taytay, Rizal, 1920 Philippines
+          <!-- Headquarters card -->
+          <div class="flex-1 self-stretch" style="min-width: 260px; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; overflow: hidden;">
+            <div style="padding: 18px 20px 14px;">
+              <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin: 0 0 4px;">Office</p>
+              <h3 style="font-size: 0.95rem; font-weight: 700; color: white; margin: 0 0 10px;">Headquarters</h3>
+              <p style="font-size: 0.82rem; color: rgba(255,255,255,0.7); line-height: 1.65; margin: 0 0 14px;">
+                Unit 3D Julia C. Pascual Realty<br>
+                No. 2 Kadalagahan St.<br>
+                Dolores, Taytay, Rizal 1920
               </p>
-              <iframe
-                src="https://maps.google.com/maps?q=Kadalagahan+St+Dolores+Taytay+Rizal+Philippines&output=embed"
-                width="100%" height="200"
-                style="border: none; border-radius: 8px;"
-                loading="lazy"
-              ></iframe>
-            `}
-          ></accordion-item>
+            </div>
+            <iframe
+              src="https://maps.google.com/maps?q=Kadalagahan+St+Dolores+Taytay+Rizal+Philippines&output=embed"
+              width="100%" height="180"
+              style="border: none; display: block;"
+              loading="lazy"
+            ></iframe>
+          </div>
 
-          <accordion-item
-            class="flex-1 self-stretch"
-            label="Coverage"
-            .content=${html`
-              <p class="text-sm text-gray-600 mb-3">Luzon, Visayas & Mindanao</p>
-              <iframe
-                src="https://maps.google.com/maps?q=Philippines&output=embed"
-                width="100%" height="200"
-                style="border: none; border-radius: 8px;"
-                loading="lazy"
-              ></iframe>
-            `}
-          ></accordion-item>
+          <!-- Coverage card -->
+          <div class="flex-1 self-stretch" style="min-width: 260px; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; overflow: hidden;">
+            <div style="padding: 18px 20px 14px;">
+              <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin: 0 0 4px;">Reach</p>
+              <h3 style="font-size: 0.95rem; font-weight: 700; color: white; margin: 0 0 10px;">Coverage</h3>
+              <p style="font-size: 0.82rem; color: rgba(255,255,255,0.7); line-height: 1.65; margin: 0 0 14px;">
+                Luzon · Visayas · Mindanao<br>
+                Nationwide project deployment<br>
+                across the Philippines
+              </p>
+            </div>
+            <iframe
+              src="https://maps.google.com/maps?q=Philippines&output=embed"
+              width="100%" height="180"
+              style="border: none; display: block;"
+              loading="lazy"
+            ></iframe>
+          </div>
 
           <registration-card
             class="flex-1 self-stretch"

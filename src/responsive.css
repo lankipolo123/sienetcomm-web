@@ -219,32 +219,7 @@
   }
 
   /* ── SITE FOOTER ──────────────────────────── */
-
-  /* Main grid: 4-col → 2-col */
-  site-footer div[style*="2fr 1fr 1fr 1fr"] {
-    grid-template-columns: 1fr 1fr !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
-    gap: 32px !important;
-  }
-
-  /* Bottom bar: side-by-side → stacked */
-  site-footer .justify-between {
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 6px !important;
-    text-align: center !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-
-  site-footer .justify-between .flex.gap-6 {
-    flex-direction: column !important;
-    gap: 2px !important;
-    align-items: center !important;
-  }
+  /* Footer uses Tailwind responsive classes — no !important overrides needed */
 
   /* ── NAV LOGO ─────────────────────────────── */
   nav-logo img {

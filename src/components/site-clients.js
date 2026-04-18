@@ -32,8 +32,8 @@ class SiteClients extends LitElement {
         <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Who we work with</p>
         <h2 class="text-3xl font-semibold mb-6" style="color: #1A6B2A;">Our Clients</h2>
 
-        <!-- Wrapping pills filter -->
-        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px;">
+        <!-- Filter pills — wraps on desktop, scrolls horizontally on mobile -->
+        <div class="filter-pills" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px;">
           ${CLIENT_CATEGORIES.map(cat => html`
             <button
               @click=${() => this.activeFilter = cat}
@@ -47,6 +47,7 @@ class SiteClients extends LitElement {
                 border-radius: 99px;
                 cursor: pointer;
                 white-space: nowrap;
+                flex-shrink: 0;
               "
             >${cat}</button>
           `)}
