@@ -59,7 +59,7 @@ class SiteAbout extends LitElement {
         <div class="flex flex-row gap-3 flex-wrap justify-center items-stretch">
 
           <!-- Headquarters card -->
-          <div class="flex-1 self-stretch" style="min-width: 260px; background: white; border-radius: 16px; overflow: hidden;">
+          <div class="flex-1 self-stretch" style="min-width: 260px; background: white; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column;">
             <div style="padding: 12px 16px 10px;">
               <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: #9ca3af; margin: 0 0 2px;">Office</p>
               <h3 style="font-size: 0.88rem; font-weight: 700; color: #111827; margin: 0 0 5px;">Headquarters</h3>
@@ -68,16 +68,20 @@ class SiteAbout extends LitElement {
                 No. 2 Kadalagahan St., Dolores, Taytay, Rizal 1920
               </p>
             </div>
-            <iframe
-              src="https://maps.google.com/maps?q=Kadalagahan+St+Dolores+Taytay+Rizal+Philippines&output=embed"
-              width="100%" height="180"
-              style="border: none; display: block; margin-top: 10px;"
-              loading="lazy"
-            ></iframe>
+            <a
+              href="https://maps.google.com/maps?q=Kadalagahan+St+Dolores+Taytay+Rizal+Philippines"
+              target="_blank"
+              rel="noopener"
+              style="flex: 1; margin: 0 12px 12px; border-radius: 10px; background: linear-gradient(135deg, #0a2314 0%, #1A6B2A 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 24px 16px; text-decoration: none; min-height: 130px;"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span style="font-size: 0.72rem; font-weight: 600; color: white; letter-spacing: 0.5px;">View on Google Maps</span>
+              <span style="font-size: 0.65rem; color: rgba(255,255,255,0.55);">Taytay, Rizal</span>
+            </a>
           </div>
 
           <!-- Coverage card -->
-          <div class="flex-1 self-stretch" style="min-width: 260px; background: white; border-radius: 16px; overflow: hidden;">
+          <div class="flex-1 self-stretch" style="min-width: 260px; background: white; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column;">
             <div style="padding: 12px 16px 10px;">
               <p style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: #9ca3af; margin: 0 0 2px;">Reach</p>
               <h3 style="font-size: 0.88rem; font-weight: 700; color: #111827; margin: 0 0 5px;">Coverage</h3>
@@ -85,12 +89,16 @@ class SiteAbout extends LitElement {
                 Luzon · Visayas · Mindanao — nationwide project deployment across the Philippines
               </p>
             </div>
-            <iframe
-              src="https://maps.google.com/maps?q=Philippines&output=embed"
-              width="100%" height="180"
-              style="border: none; display: block; margin-top: 10px;"
-              loading="lazy"
-            ></iframe>
+            <a
+              href="https://maps.google.com/maps?q=Philippines"
+              target="_blank"
+              rel="noopener"
+              style="flex: 1; margin: 0 12px 12px; border-radius: 10px; background: linear-gradient(135deg, #0a2314 0%, #1A6B2A 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 24px 16px; text-decoration: none; min-height: 130px;"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span style="font-size: 0.72rem; font-weight: 600; color: white; letter-spacing: 0.5px;">View on Google Maps</span>
+              <span style="font-size: 0.65rem; color: rgba(255,255,255,0.55);">Philippines</span>
+            </a>
           </div>
 
           <registration-card

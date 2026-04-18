@@ -180,12 +180,15 @@ class ContactContent extends LitElement {
                   No. 2 Kadalagahan St.<br>
                   Dolores, Taytay, Rizal 1920
                 </p>
-                <iframe
-                  src="https://maps.google.com/maps?q=Kadalagahan+St+Dolores+Taytay+Rizal+Philippines&output=embed"
-                  width="100%" height="170"
-                  style="border: none; border-radius: 10px; display: block;"
-                  loading="lazy"
-                ></iframe>
+                <a
+                  href="https://maps.google.com/maps?q=Kadalagahan+St+Dolores+Taytay+Rizal+Philippines"
+                  target="_blank"
+                  rel="noopener"
+                  style="display: flex; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(135deg, #0a2314 0%, #1A6B2A 100%); border-radius: 10px; padding: 18px; text-decoration: none;"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span style="font-size: 0.8rem; font-weight: 600; color: white;">View on Google Maps ↗</span>
+                </a>
               </div>
             </div>
 
