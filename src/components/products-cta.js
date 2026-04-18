@@ -5,7 +5,7 @@ class ProductsCta extends LitElement {
 
   render() {
     return html`
-      <section style="background: #111827; padding: 64px 80px; text-align: center;">
+      <section style="background: linear-gradient(135deg, #0d1b3e 0%, #162554 100%); padding: 64px 80px; text-align: center;">
         <h2 style="font-size: 1.8rem; font-weight: 700; color: white; margin: 0 0 12px;">Need a specific product or brand?</h2>
         <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; line-height: 1.7; margin: 0 auto 32px; max-width: 600px;">
           We source, supply, and install equipment from hundreds of brands. Reach out with your requirements.
