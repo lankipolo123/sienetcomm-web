@@ -150,12 +150,12 @@
   }
 
   /* ── SITE SERVICES ────────────────────────── */
-  site-services div[style*="repeat(2, 1fr)"] {
+  site-services div[style*="repeat(4, 1fr)"] {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px !important;
   }
 
-  site-services div[style*="repeat(2, 1fr)"] > div {
+  site-services div[style*="repeat(4, 1fr)"] > div {
     min-height: 200px !important;
   }
 

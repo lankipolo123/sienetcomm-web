@@ -24,7 +24,7 @@ class SiteServices extends LitElement {
           </button>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
           ${SERVICES.map((s, i) => html`
             <div
               style="
