@@ -39,7 +39,7 @@
   site-hero section {
     padding: 36px 20px 44px !important;
     min-height: unset !important;
-    overflow: visible !important;
+    overflow: hidden !important;
   }
 
   site-hero span[style*="letter-spacing: 3px"] {
@@ -151,16 +151,20 @@
 
   /* ── SITE SERVICES ────────────────────────── */
   site-services div[style*="repeat(2, 1fr)"] {
-    grid-template-columns: 1fr !important;
-    gap: 14px !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
   }
 
   site-services div[style*="repeat(2, 1fr)"] > div {
-    min-height: 260px !important;
+    min-height: 200px !important;
   }
 
   site-services h3 {
-    font-size: 1.15rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  site-services p[style*="letter-spacing"] {
+    font-size: 0.6rem !important;
   }
 
   /* ── SERVICES DETAIL ──────────────────────── */
