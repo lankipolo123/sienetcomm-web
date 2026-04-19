@@ -7,8 +7,8 @@ class SiteFooter extends LitElement {
     return html`
       <footer>
 
-        <!-- Main grid: 2-col mobile → 4-col desktop -->
-        <div class="grid grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] px-5 py-12 gap-8 md:px-10 md:py-14" style="background: #111827;">
+        <!-- Main grid: 2-col mobile → 5-col desktop -->
+        <div class="grid grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] px-5 py-12 gap-8 md:px-10 md:py-14" style="background: #111827;">
 
           <!-- Brand column -->
           <div class="col-span-2 lg:col-span-1">
