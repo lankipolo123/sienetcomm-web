@@ -168,19 +168,13 @@
   }
 
   /* ── SERVICES DETAIL ──────────────────────── */
-  services-detail div[style*="grid-template-columns"] {
-    display: flex !important;
-    flex-direction: column !important;
+  services-detail div[style*="repeat(2, 1fr)"] {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
   }
 
-  services-detail div[style*="min-height: 360px"] {
-    min-height: 200px !important;
-    order: -1 !important;
-  }
-
-  services-detail div[style*="padding: 40px 44px"] {
-    padding: 24px 20px !important;
-    order: 1 !important;
+  services-detail div[style*="min-height: 220px"] {
+    min-height: 180px !important;
   }
 
   /* ── SERVICES CTA ─────────────────────────── */
@@ -317,18 +311,8 @@
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  services-detail div[style*="grid-template-columns"] {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  services-detail div[style*="min-height: 360px"] {
-    min-height: 240px !important;
-    order: -1 !important;
-  }
-
-  services-detail div[style*="padding: 40px 44px"] {
-    order: 1 !important;
+  services-detail div[style*="repeat(2, 1fr)"] {
+    grid-template-columns: 1fr !important;
   }
 
   home-products-teaser ul[style*="repeat(4, 1fr)"] {
